@@ -8,6 +8,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser('python tvloss.py')
     parser.add_argument('--history', required=True, help='a history file')
     parser.add_argument('--output', required=False, help='an output file')
+    parser.add_argument('--title', required=False, type=str, help='optional plot title')
 
     args = parser.parse_args()
 
@@ -26,6 +27,8 @@ if __name__ == '__main__':
     pyplot.xlabel('epoch')
     pyplot.ylabel('loss')
     pyplot.legend(['train', 'valid'])
+    if args.title:
+        pyplot.title(args.title)
 
     if args.output:
         pyplot.savefig(args.output)
