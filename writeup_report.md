@@ -64,12 +64,14 @@ The draining dataset contains `24565` points in training set and `6148` points i
 
 As it was mentioned above the data set includes 2 kind of trajectories. These images show images for each kind of trajectory:
 
-_center driving_:
+_center driving_
+
   ![track 1 center driving](illustrations/dataset/center.jpg)
   
   ![track 2 center driving](illustrations/dataset/t2-center.jpg)
   
 _recovering from side_
+
   ![track 1 recovering from side](illustrations/dataset/recovering.jpg)
   
   ![track 2 recovering from side](illustrations/dataset/t2-recovering.jpg)
@@ -78,9 +80,11 @@ _recovering from side_
 To generate more data collected data was augmented. Below you can see flipped images:
 
 _center driving flipped_
+
   ![center driving](illustrations/dataset/center-flipped.jpg)
 
 _recovering from side flipped_
+
   ![recovering from side](illustrations/dataset/recovering-flipped.jpg)
 
 For flipped images sign of steering angle value was changed to opposite.
@@ -92,9 +96,11 @@ Images from Left and Right cameras were used. Steering angle for these images wa
 Examples:
 
 _left camera image_
+
   ![left camera](illustrations/dataset/left.jpg)
   
 _right camera image_
+
   ![right camera](illustrations/dataset/right.jpg)
 
 #### Sterring Angle Histogram
